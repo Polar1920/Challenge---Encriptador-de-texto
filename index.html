@@ -18,13 +18,13 @@
 
     <main>
 
-        <textarea class="" name="texto" id="texto" required placeholder="Ingrese el texto aquí"></textarea>
+        <textarea class="texto" name="texto" id="texto" required placeholder="Ingrese el texto aquí"></textarea>
 
-        <button type="button" onclick="myFunction()" class="">Encriptar</button>
+        <button type="button" onclick="encriptar()" class="">Encriptar</button>
 
-        <button type="button" onclick="myFunction()" class="">Desencriptar</button>
+        <button type="button" onclick="desencriptar()" class="">Desencriptar</button>
 
-        <textarea class="resultado" name="resultado" id="resultado"></textarea>
+        <textarea class="resultado" name="resultado" id="resultado" disabled></textarea>
 
         <button type="button" onclick="copiar()" class="">Copiar</button>
 
@@ -41,18 +41,7 @@
         }
     </style>
 
-    <script>
-        function myFunction() {
-            document.getElementById("resultado").style.backgroundImage = "none";
-        }
-
-        function copiar() {
-            let copyText = document.querySelector("#resultado");
-            copyText.select();
-            document.execCommand("copy");
-        }
-        
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
